@@ -22,8 +22,7 @@ const ControlledCarousel = ({ images, interval }) => {
                 <h1>Welcome to Rapid Dynamic Reach Shuttles & Tours</h1>
                 <p>
                   24/7 availability and emergency response - Reliable, comfortable and professional transportation solutions
-                  with experinced drivers. All documentst are in order, thus providing swift services with ease across the continent!!!
-                </p>
+                  with experinced drivers.  </p>
               </div>
             </div>
           </Carousel.Item>

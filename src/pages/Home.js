@@ -26,7 +26,7 @@ const Home = () => {
   return (
   <>
 
-<section id="home" className="home"> 
+<section id="home" className="home" style={{padding:"0px 0"}}> 
       <ControlledCarousel images={Hero} interval={1200} />
       </section>
       <Features />
