@@ -1,6 +1,6 @@
 import * as bi from "react-icons/bi";
 import { Link } from "react-router-dom";
-import Video from "../videos/shuttle.mp4";
+
 
 const Services = () => {
   return (
