@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rdr-shuttles-and-tours/static/css/main.99e513f1.css",
+    "main.css": "/rdr-shuttles-and-tours/static/css/main.16305a44.css",
     "main.js": "/rdr-shuttles-and-tours/static/js/main.a1a145c0.js",
     "static/media/shuttle8.jpg": "/rdr-shuttles-and-tours/static/media/shuttle8.02d55ea5f2d265f7cd13.jpg",
     "static/media/shuttle9.jpg": "/rdr-shuttles-and-tours/static/media/shuttle9.13c9c046c021bef17fd9.jpg",
@@ -21,11 +21,11 @@
     "static/media/shuttle11.jpg": "/rdr-shuttles-and-tours/static/media/shuttle11.777f9f1a425668f1f3fc.jpg",
     "static/media/shuttle4.jpg": "/rdr-shuttles-and-tours/static/media/shuttle4.c0644d842d15c6c0da32.jpg",
     "index.html": "/rdr-shuttles-and-tours/index.html",
-    "main.99e513f1.css.map": "/rdr-shuttles-and-tours/static/css/main.99e513f1.css.map",
+    "main.16305a44.css.map": "/rdr-shuttles-and-tours/static/css/main.16305a44.css.map",
     "main.a1a145c0.js.map": "/rdr-shuttles-and-tours/static/js/main.a1a145c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.99e513f1.css",
+    "static/css/main.16305a44.css",
     "static/js/main.a1a145c0.js"
   ]
 }
