@@ -13,16 +13,19 @@ const Services = () => {
               <div className="video-wrapper">
                 <video
                   className="w-100 rounded shadow"
-                  
-                  preload="metadata"
                   autoPlay
                   muted
                   loop
                   playsInline
+                  preload="metadata"
                 >
-                  <source src="../videos/showcase.mp4" type="video/mp4" />
+                  <source
+                    src={`${process.env.PUBLIC_URL}/videos/showcase.mp4`}
+                    type="video/mp4"
+                  />
                   Your browser does not support the video tag.
                 </video>
+
               </div>
             </div>
           </div>
