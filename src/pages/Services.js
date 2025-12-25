@@ -1,5 +1,6 @@
 import * as bi from "react-icons/bi";
 import { Link } from "react-router-dom";
+import Video from "../videos/shuttle.mp4";
 
 const Services = () => {
   return (
@@ -19,7 +20,7 @@ const Services = () => {
                   loop
                   playsInline
                 >
-                  <source src="/videos/showcase.mp4" type="video/mp4" />
+                  <source src="../videos/showcase.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
