@@ -108,9 +108,22 @@ const Home = () => {
                 </p>
                 <a href="https://wa.me/27615893249?text=Hello%20Rapid%20Dynamic%20Reach,%20I%20would%20like%20to%20enquire%20about%20your%20shuttle%20services." className="btn btn-primary btn-lg">
                   Make a Booking
-                </a><br/>
+                </a>
               </div><br/>
-              
+              <video
+        className="w-100 rounded shadow"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      >
+        <source
+          src={`${process.env.PUBLIC_URL}/videos/showcase2.mp4`}
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video><br/><br/>
             </section>
     </>
   );

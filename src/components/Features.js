@@ -77,6 +77,21 @@ const Features = () => {
         </div>
       </section>
 
+      <video
+        className="w-100 rounded shadow"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      >
+        <source
+          src={`${process.env.PUBLIC_URL}/videos/tour1.mp4`}
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video><br/><br/>
+
       {/* ===== SECTION 2: TOURS, VIP & LIFESTYLE ===== */}
       <section id="experiences" className="featured">
         <div className="container">
