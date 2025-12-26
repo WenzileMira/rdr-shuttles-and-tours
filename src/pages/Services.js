@@ -17,7 +17,7 @@ const Services = () => {
                   muted
                   loop
                   playsInline
-                  preload="metadata"
+                  preload="auto"
                 >
                   <source
                     src={`${process.env.PUBLIC_URL}/videos/showcase.mp4`}

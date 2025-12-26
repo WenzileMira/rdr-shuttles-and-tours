@@ -83,7 +83,7 @@ const Features = () => {
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="auto"
       >
         <source
           src={`${process.env.PUBLIC_URL}/videos/tour1.mp4`}
