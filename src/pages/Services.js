@@ -1,171 +1,222 @@
 import * as bi from "react-icons/bi";
-import { Link } from "react-router-dom";
-
 
 const Services = () => {
   return (
     <>
-      {/* SHUTTLE SHOWCASE VIDEO */}
-      <section className="featured shuttle-video-section" >
+      {/* ================= CORE SERVICES ================= */}
+      <section className="featured">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-10">
-              <div className="video-wrapper">
-                <video
-                  className="w-100 rounded shadow"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="auto"
-                >
-                  <source
-                    src={`${process.env.PUBLIC_URL}/videos/showcase.mp4`}
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
 
+          {/* VIDEO HERO */}
+          <div className="video-hero">
+            <video
+              className="video-bg"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+            >
+              <source
+                src={`${process.env.PUBLIC_URL}/videos/showcase.mp4`}
+                type="video/mp4"
+              />
+            </video>
+
+            <div className="video-overlay">
+              <div className="section-title text-center mb-4">
+                <h2>Core Transport Services</h2>
+                <p>Efficient mobility solutions for individuals, groups, and organisations</p>
+              </div>
+
+              <a
+                href="https://wa.me/27615893249?text=Hello%20Rapid%20Dynamic%20Reach,%20I%20would%20like%20to%20enquire%20about%20your%20shuttle%20services."
+                className="video-cta"
+              >
+                Enquire on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <br /><br />
+
+          {/* SERVICE CARDS */}
+          <div className="row">
+            <div className="col-lg-4 col-md-6 mb-4">
+              <div className="icon-box h-100">
+                <i><bi.BiSolidPlaneTakeOff /></i>
+                <h4>Airport Transfers</h4>
+                <p>
+                  Seamless pickups and drop-offs to OR Tambo, King Shaka, Kruger
+                  Mpumalanga, King Mswati III, Lanseria, Maputo, Gaborone,
+                  and Moshoeshoe I.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6 mb-4">
+              <div className="icon-box h-100">
+                <i><bi.BiTransfer /></i>
+                <h4>Cross-Border Shuttles</h4>
+                <p>
+                  Reliable transport between South Africa, Eswatini,
+                  Mozambique, Botswana, and Lesotho.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6 mb-4">
+              <div className="icon-box h-100">
+                <i><bi.BiBriefcase /></i>
+                <h4>Corporate Transportation</h4>
+                <p>
+                  Professional transport for meetings, conferences,
+                  staff movement, and executive travel.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section><br/>
 
-      {/* CORE SERVICES */}
-     <section id="routes" className="featured" >
+      {/* ================= TOURS & LEISURE ================= */}
+      <section className="featured">
         <div className="container">
 
-          <div className="section-title text-center mb-5" >
-            <h2>Core Transport Services</h2>
-            <p>Efficient mobility solutions for individuals, groups, and organisations</p>
+          <div className="video-hero">
+            <video
+              className="video-bg"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+            >
+              <source
+                src={`${process.env.PUBLIC_URL}/videos/tour.mp4`}
+                type="video/mp4"
+              />
+            </video>
+
+            <div className="video-overlay">
+              <div className="section-title text-center mb-4">
+                <h2>Tours & Leisure Experiences</h2>
+                <p>Curated travel experiences for families, couples, adults, and children</p>
+              </div>
+
+              <a
+                href="https://wa.me/27615893249?text=Hello%20Rapid%20Dynamic%20Reach,%20I%20would%20like%20to%20enquire%20about%20your%20tour%20packages."
+                className="video-cta"
+              >
+                Enquire on WhatsApp
+              </a>
+            </div>
           </div>
 
+          <br /><br />
+
           <div className="row">
-             <div className="col-lg-4 col-md-6 mb-4">
-                <div className="icon-box h-100">
-                  <i><bi.BiSolidPlaneTakeOff /></i>
-                  <p><h4>Airport Transfers</h4></p>
-                  <p>
-                  Seamless pickups and drop-offs to and from major airports including
-                  OR Tambo, King Shaka, Kruger Mpumalanga, King Mswati III, Lanseria,
-                  Maputo International, Gaborone Sir Seretse Khama, and Moshoeshoe I.
+            <div className="col-lg-4 col-md-6 mb-4">
+              <div className="icon-box h-100">
+                <i><bi.BiCamera /></i>
+                <h4>Sightseeing & Nature Tours</h4>
+                <p>
+                  Guided trips to Kruger National Park, Panorama Route,
+                  Mlilwane, Mantenga, and Malolotja.
                 </p>
               </div>
             </div>
 
-             <div className="col-lg-4 col-md-6 mb-4">
-                <div className="icon-box h-100">
-                <i><bi.BiTransfer className="service-icon" /></i>
-                <p><h4>Cross-Border Shuttles</h4></p>
+            <div className="col-lg-4 col-md-6 mb-4">
+              <div className="icon-box h-100">
+                <i><bi.BiHeart /></i>
+                <h4>Couple & Romantic Getaways</h4>
                 <p>
-                  Reliable cross-border transport between South Africa, Eswatini,
-                  Mozambique, Botswana, and Lesotho. Ideal for business travel,
-                  families, tourists, and long-distance commuters.
+                  Private transfers for honeymoons, anniversaries,
+                  beach escapes, and safari lodges.
                 </p>
               </div>
             </div>
 
-             <div className="col-lg-4 col-md-6 mb-4">
-                <div className="icon-box h-100">
-                <i><bi.BiBriefcase className="service-icon" /></i>
-                <p><h4>Corporate Transportation</h4></p>
+            <div className="col-lg-4 col-md-6 mb-4">
+              <div className="icon-box h-100">
+                <i><bi.BiHappyAlt /></i>
+                <h4>Family & Kids-Friendly Tours</h4>
                 <p>
-                  Professional transport solutions for meetings, conferences,
-                  staff movement, executive travel, and institutional contracts
-                  with punctuality and discretion.
+                  Comfortable family travel to resorts, wildlife parks,
+                  beaches, and entertainment destinations.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section><br/>
 
-      {/* TOURS & LEISURE */}
-      <section id="routes" className="featured" >
+      {/* ================= PREMIUM & EVENTS ================= */}
+      <section className="featured">
         <div className="container">
 
-          <div className="section-title text-center mb-5" >
-            <h2>Tours & Leisure Experiences</h2>
-            <p>Curated travel experiences for families, couples, adults, and children</p>
-          </div>
+          <div className="video-hero">
+        <video
+          className="video-bg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+        >
+          <source
+            src={`${process.env.PUBLIC_URL}/videos/Tour5.mp4`}
+            type="video/mp4"
+          />
+        </video>
 
-          <div className="row">
-            <div className="col-lg-4 col-md-6 mb-4">
-                <div className="icon-box h-100">
-                <i><bi.BiCamera className="service-icon" /></i>
-                <p><h4>Sightseeing & Nature Tours</h4></p>
-                <p>
-                  Guided trips to Kruger National Park, Panorama Route, Blyde River
-                  Canyon, Hazyview, White River, Mlilwane, Mantenga, and Malolotja.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 mb-4">
-                <div className="icon-box h-100">
-                <i><bi.BiHeart className="service-icon" /></i>
-                <p><h4>Couple & Romantic Getaways</h4></p>
-                <p>
-                  Private transfers for honeymoons, anniversaries, beach escapes,
-                  safari lodges, spa retreats, and intimate weekend getaways.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 mb-4">
-                <div className="icon-box h-100">
-                <i><bi.BiHappyAlt className="service-icon" /></i>
-                <p><h4>Family & Kids-Friendly Tours</h4></p>
-                <p>
-                  Comfortable family travel to resorts, wildlife parks, beaches,
-                  malls, cultural villages, and entertainment destinations.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PREMIUM & EVENTS */}
-      <section id="routes" className="featured">
-        <div className="container">
-
+        <div className="video-overlay">
           <div className="section-title text-center mb-5">
             <h2>Premium, Events & Lifestyle Transport</h2>
             <p>Discreet, stylish and dependable transport for special occasions</p>
           </div>
+          <a
+            href="https://wa.me/27615893249?text=Hello%20Rapid%20Dynamic%20Reach,%20I%20would%20like%20to%20enquire%20about%20your%20tour%20packages."
+            className="video-cta"
+          >
+            Book Now
+          </a>
+        </div>
+      </div><br/><br/>
+
+          
 
           <div className="row">
             <div className="col-lg-4 col-md-6 mb-4">
-                <div className="icon-box h-100">
-                <i><bi.BiStar className="service-icon" /></i>
-                <p><h4>Executive & Lifestyle Transport</h4></p>
+              <div className="icon-box h-100">
+                <i><bi.BiStar /></i>
+                <h4>Executive & Lifestyle Transport</h4>
                 <p>
-                  Premium transfers for business leaders, celebrities, diplomats,
-                  nightlife venues, private functions, and exclusive locations.
+                  Premium transfers for business leaders, diplomats,
+                  nightlife venues, and private functions.
                 </p>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 mb-4">
-                <div className="icon-box h-100">
-                <i><bi.BiCalendarEvent className="service-icon" /></i>
-                <p><h4>Events & Group Transport</h4></p>
+              <div className="icon-box h-100">
+                <i><bi.BiCalendarEvent /></i>
+                <h4>Events & Group Transport</h4>
                 <p>
-                  Transport solutions for weddings, funerals, concerts, festivals,
-                  conferences, sporting events, and group tours.
+                  Transport solutions for weddings, funerals, concerts,
+                  conferences, and sporting events.
                 </p>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 mb-4">
-                <div className="icon-box h-100">
-                <i><bi.BiTimeFive className="service-icon" /></i>
-                <p><h4>24/7 On-Demand Services</h4></p>
+              <div className="icon-box h-100">
+                <i><bi.BiTimeFive /></i>
+                <h4>24/7 On-Demand Services</h4>
                 <p>
-                  Flexible scheduling with emergency response and round-the-clock
-                  availability to meet urgent or time-sensitive travel needs.
+                  Flexible scheduling with emergency response and
+                  round-the-clock availability.
                 </p>
               </div>
             </div>
@@ -173,21 +224,9 @@ const Services = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="services-cta text-center">
-        <div className="container">
-          <p>
-            Let Rapid Dynamic Reach (Pty) Ltd handle your other needs
-            professionally, safely, and reliably.
-          </p>
-          <Link to="https://wa.me/27615893249?text=Hello%20Rapid%20Dynamic%20Reach,%20I%20would%20like%20to%20enquire%20about%20your%20shuttle%20services." className="btn btn-primary btn-lg">
-            Make a Booking
-          </Link><br/>
-        </div><br/>
-        
-      </section>
-
-      {/* ON-DEMAND & PROJECT SERVICES */}
+      {/* ================= FINAL CTA VIDEO ================= */}
+      
+         {/* ON-DEMAND & PROJECT SERVICES */}
 <section id="routes" className="featured">
   <div className="container">
 
@@ -242,8 +281,7 @@ const Services = () => {
 
     </div>
   </div>
-</section>
-
+</section><br/>
     </>
   );
 };

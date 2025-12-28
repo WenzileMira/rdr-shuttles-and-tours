@@ -77,20 +77,37 @@ const Features = () => {
         </div>
       </section>
 
-      <video
-        className="w-100 rounded shadow"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-      >
-        <source
-          src={`${process.env.PUBLIC_URL}/videos/tour1.mp4`}
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video><br/><br/>
+     <div className="video-hero">
+  <video
+    className="video-bg"
+    autoPlay
+    muted
+    loop
+    playsInline
+    preload="auto"
+  >
+    <source
+      src={`${process.env.PUBLIC_URL}/videos/tour.mp4`}
+      type="video/mp4"
+    />
+    Your browser does not support the video tag.
+  </video>
+
+  {/* TEXT OVERLAY */}
+  <div className="video-overlay">
+    <h1>Reliable Shuttle & Tour Services</h1>
+    <p>
+      Let Rapid Dynamic Reach Tours & Shuttling handle exploring professionally, safely, and reliably. Let's go places together🐾
+    </p>
+    <a
+      href="https://wa.me/27615893249?text=Hello%20Rapid%20Dynamic%20Reach,%20I%20would%20like%20to%20enquire%20about%20your%20shuttle%20services."
+      className="video-cta"
+    >
+      Enquire on WhatsApp
+    </a>
+  </div>
+</div>
+<br/><br/>
 
       {/* ===== SECTION 2: TOURS, VIP & LIFESTYLE ===== */}
       <section id="experiences" className="featured">
@@ -125,11 +142,12 @@ const Features = () => {
               <i><bi.BiCustomize /></i>
               <p><h4>Custom & Private Bookings</h4></p>
               <p>
+                Guided Tours<br/>
                 Door-to-door private trips<br />
                 Corporate contracts & long-term hires<br />
                 Weddings, events & special occasions<br />
                 Couples, families & group travel<br />
-                Greivi
+                Funeral Shuttling
                 Tailor-made routes on request
               </p>
             
