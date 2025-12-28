@@ -114,7 +114,7 @@ const Home = () => {
     muted
     loop
     playsInline
-    preload="auto"
+    preload="metadata"
   >
     <source
       src={`${process.env.PUBLIC_URL}/videos/tour4.mp4`}
